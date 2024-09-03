@@ -1,13 +1,21 @@
-import './App.css'
-import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
-import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Explore from "./pages/Explore"
+import './index.css';
+
 
 function App() {
+
+
   return (
     <>
-      <div>
-        <WalletSelector />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+        </Routes>
+      </BrowserRouter>
+
     </>
   )
 }

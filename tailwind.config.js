@@ -10,6 +10,7 @@ export default {
         'fade-in': 'fadeIn 2s ease-out',
       },
       keyframes: {
+        
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
@@ -21,6 +22,7 @@ export default {
       colors: {
         'dark-green': '#004d00', // Define your dark green color
       },
+      
     },
   },
   plugins: [],

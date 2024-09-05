@@ -1,14 +1,13 @@
-import bg2 from '../assets/bg3.jpeg';
-import ComicNavbar from '../components/ComicNavbar';
+import backgroundImage from '../assets/bg3.jpeg';
+import MarketplaceIntro from '../components/MarketplaceIntro';
 
 function Explore() {
   return (
     <div
       className="relative flex flex-col min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${bg2})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <ComicNavbar />
-      {/* Add more content for your comic story here */}
+      <MarketplaceIntro/>
     </div>
   );
 }
